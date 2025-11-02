@@ -1,11 +1,19 @@
-export const DesktopDefault = () => {
+export const DesktopDefault = ({
+  frame = false,
+  home = false,
+}: {
+  frame?: boolean;
+  home?: boolean;
+}) => {
+  const backgroundColor = frame ? "transparent" : "#FFFFFF";
+  const size = home ? 23 : 25;
   return (
     <div
       style={{
         boxSizing: "border-box",
-        width: 25,
-        height: 25,
-        backgroundColor: "#FFFFFF",
+        width: size,
+        height: size,
+        backgroundColor,
         borderRadius: 6,
         position: "relative",
         overflow: "hidden",
@@ -28,15 +36,23 @@ export const DesktopDefault = () => {
     </div>
   );
 };
-export const DesktopVariant2 = () => {
+export const DesktopVariant2 = ({
+  frame = false,
+  home = false,
+}: {
+  frame?: boolean;
+  home?: boolean;
+}) => {
+  const backgroundColor = frame ? "transparent" : "#FFFFFF";
+  const size = home ? 23 : 25;
   return (
     <div
       style={{
         boxSizing: "border-box",
         position: "relative",
-        width: 25,
-        height: 25,
-        backgroundColor: "#FFFFFF",
+        width: size,
+        height: size,
+        backgroundColor,
         border: "1px solid #BDBDBD",
         borderRadius: 6,
         overflow: "hidden",
@@ -62,15 +78,23 @@ export const DesktopVariant2 = () => {
   );
 };
 
-export const DesktopVariant9 = () => {
+export const DesktopVariant9 = ({
+  frame = false,
+  home = false,
+}: {
+  frame?: boolean;
+  home?: boolean;
+}) => {
+  const backgroundColor = frame ? "transparent" : "#FFFFFF";
+  const size = home ? 23 : 25;
   return (
     <div
       style={{
         boxSizing: "border-box",
         position: "relative",
-        width: 25,
-        height: 25,
-        backgroundColor: "#FFFFFF",
+        width: size,
+        height: size,
+        backgroundColor,
         border: "1px solid #BDBDBD",
         borderRadius: 6,
         boxShadow: "0 0 0 3px rgba(36, 105, 246, 0.1)",
@@ -97,14 +121,15 @@ export const DesktopVariant9 = () => {
   );
 };
 
-export const DesktopVariant4 = () => {
+export const DesktopVariant4 = ({ home = false }: { home?: boolean }) => {
+  const size = home ? 23 : 25;
   return (
     <div
       style={{
         boxSizing: "border-box",
         position: "relative",
-        width: 25,
-        height: 25,
+        width: size,
+        height: size,
         backgroundColor: "#5087F8",
         borderRadius: 6,
         overflow: "hidden",
@@ -128,14 +153,15 @@ export const DesktopVariant4 = () => {
   );
 };
 
-export const DesktopVariant5 = () => {
+export const DesktopVariant5 = ({ home = false }: { home?: boolean }) => {
+  const size = home ? 23 : 25;
   return (
     <div
       style={{
         boxSizing: "border-box",
         position: "relative",
-        width: 25,
-        height: 25,
+        width: size,
+        height: size,
         backgroundColor: "#2469F6",
         borderRadius: 6,
         overflow: "hidden",
@@ -159,14 +185,15 @@ export const DesktopVariant5 = () => {
   );
 };
 
-export const DesktopVariant6 = () => {
+export const DesktopVariant6 = ({ home = false }: { home?: boolean }) => {
+  const size = home ? 23 : 25;
   return (
     <div
       style={{
         boxSizing: "border-box",
         position: "relative",
-        width: 25,
-        height: 25,
+        width: size,
+        height: size,
         backgroundColor: "#5087F8",
         borderRadius: 6,
         overflow: "hidden",
@@ -190,14 +217,15 @@ export const DesktopVariant6 = () => {
   );
 };
 
-export const DesktopVariant7 = () => {
+export const DesktopVariant7 = ({ home = false }: { home?: boolean }) => {
+  const size = home ? 23 : 25;
   return (
     <div
       style={{
         boxSizing: "border-box",
         position: "relative",
-        width: 25,
-        height: 25,
+        width: size,
+        height: size,
         backgroundColor: "#2469F6",
         boxShadow: "0 0 0 3px rgba(36, 105, 246, 0.1)",
         borderRadius: 6,
@@ -222,15 +250,23 @@ export const DesktopVariant7 = () => {
   );
 };
 
-export const DesktopVariant8 = () => {
+export const DesktopVariant8 = ({
+  frame = false,
+  home = false,
+}: {
+  frame?: boolean;
+  home?: boolean;
+}) => {
+  const backgroundColor = frame ? "transparent" : "#FFFFFF";
+  const size = home ? 23 : 25;
   return (
     <div
       style={{
         boxSizing: "border-box",
         position: "relative",
-        width: 25,
-        height: 25,
-        backgroundColor: "#FFFFFF",
+        width: size,
+        height: size,
+        backgroundColor,
         border: "1px solid #BDBDBD",
         borderRadius: 6,
         overflow: "hidden",
@@ -256,15 +292,23 @@ export const DesktopVariant8 = () => {
   );
 };
 
-export const DesktopVariant10 = () => {
+export const DesktopVariant10 = ({
+  frame = false,
+  home = false,
+}: {
+  frame?: boolean;
+  home?: boolean;
+}) => {
+  const backgroundColor = frame ? "transparent" : "#FFFFFF";
+  const size = home ? 23 : 25;
   return (
     <div
       style={{
         boxSizing: "border-box",
         position: "relative",
-        width: 25,
-        height: 25,
-        backgroundColor: "#FFFFFF",
+        width: size,
+        height: size,
+        backgroundColor,
         border: "1px solid rgba(205,205,205,1)",
         borderRadius: 6,
       }}

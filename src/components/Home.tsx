@@ -1,56 +1,61 @@
-export const HomeDefault = () => {
+import type { ReactNode } from "react";
+
+export type HomeDefaultProps = {
+  frame?: boolean;
+  right?: ReactNode;
+  label?: string;
+};
+export const HomeDefault = ({
+  frame = false,
+  right,
+  label = "All pages",
+}: HomeDefaultProps) => {
+  const backgroundColor = frame ? "transparent" : "#FFFFFF";
   return (
     <div
       style={{
         display: "flex",
+        width: "370px",
+        height: "42px",
+        top: "20px",
+        left: "20px",
         justifyContent: "space-between",
         alignItems: "center",
-        gap: 5,
-        padding: "8px 15px 8px 22px",
-        width: 370,
-        height: 42,
-        backgroundColor: "#FFFFFF",
+        opacity: "1",
+        paddingTop: "8px",
+        paddingRight: "15px",
+        paddingBottom: "8px",
+        paddingLeft: "22px",
+        backgroundColor,
       }}
     >
       <span
         style={{
-          color: "#1F2128",
-          fontFamily: "Montserrat, ui-sans-serif, system-ui",
+          width: "64px",
+          height: "18px",
+          opacity: 1,
+          fontFamily: "Montserrat",
           fontWeight: 400,
-          fontSize: 14,
+          fontStyle: "normal",
+          fontSize: "14px",
           lineHeight: "130%",
+          letterSpacing: "0px",
+          verticalAlign: "middle",
         }}
       >
-        All pages
+        {label}
       </span>
       <div
         style={{
           width: 35,
           height: 35,
-          borderRadius: 9999,
-          backgroundColor: "#2469F6",
-          position: "relative",
+          opacity: 1,
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
         }}
-        aria-hidden
       >
-        <svg
-          width="12"
-          height="8"
-          viewBox="0 0 12 8"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M1 1.5L6 6.5L11 1.5"
-            stroke="#FFFFFF"
-            strokeWidth={1.5}
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-        </svg>
+        {right}
       </div>
     </div>
   );
