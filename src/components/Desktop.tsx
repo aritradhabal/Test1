@@ -6,11 +6,26 @@ export const DesktopDefault = () => {
         width: 25,
         height: 25,
         backgroundColor: "#FFFFFF",
-        border: "1px solid #CDCDCD",
         borderRadius: 6,
-        opacity: 0.6,
+        position: "relative",
+        overflow: "hidden",
       }}
-    />
+    >
+      <div
+        aria-hidden
+        style={{
+          position: "absolute",
+          left: 0,
+          right: 0,
+          top: 0,
+          bottom: 0,
+          border: "1px solid #CDCDCD",
+          borderRadius: 6,
+          opacity: 0.6,
+          pointerEvents: "none",
+        }}
+      />
+    </div>
   );
 };
 export const DesktopVariant2 = () => {
@@ -246,12 +261,12 @@ export const DesktopVariant10 = () => {
     <div
       style={{
         boxSizing: "border-box",
+        position: "relative",
         width: 25,
         height: 25,
         backgroundColor: "#FFFFFF",
-        border: "1px solid #CDCDCD",
+        border: "1px solid rgba(205,205,205,1)",
         borderRadius: 6,
-        opacity: 0.6,
       }}
     />
   );
