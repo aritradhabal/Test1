@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Montserrat", ui-sans-serif, system-ui, -apple-system, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.font-specs-variant1 {
+  background-color: #ffce22;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 340px;
+  height: 40px;
+  border-radius: 4px;
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  gap: 10px;
+  rotate: 0 deg;
+  opacity: 1;
+}
+.font-specs-variant1:hover {
+  background-color: #ffd84d;
+}
+.font-specs-default {
+  color: #1f2128;
+  font-family: Montserrat;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 130%;
+  letter-spacing: 0px;
+  vertical-align: middle;
+}
