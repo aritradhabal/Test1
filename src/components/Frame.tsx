@@ -1,6 +1,5 @@
-import { ButtonVariant3 } from "./Button";
-import { DesktopDefault } from "./Desktop";
-import { HomeDefault } from "./Home";
+import { ButtonDefault } from "./Button";
+import { InteractiveHomeRow } from "../InteractiveRows";
 
 export const Frame = () => {
   return (
@@ -31,7 +30,7 @@ export const Frame = () => {
             "0px 8px 15px 0px rgba(20, 20, 20, 0.12), 0px 0px 4px 0px rgba(20, 20, 20, 0.1)",
         }}
       >
-        <HomeDefault frame={true} right={<DesktopDefault frame={true} />} />
+        <InteractiveHomeRow label="All Pages" />
         <div
           style={{
             width: "370px",
@@ -63,26 +62,10 @@ export const Frame = () => {
           </svg>
         </div>
         <div style={{ width: "370px", height: "164px", opacity: 1 }}>
-          <HomeDefault
-            label="Page 1"
-            frame={true}
-            right={<DesktopDefault frame={true} />}
-          />
-          <HomeDefault
-            label="Page 2"
-            frame={true}
-            right={<DesktopDefault frame={true} />}
-          />
-          <HomeDefault
-            label="Page 3"
-            frame={true}
-            right={<DesktopDefault frame={true} />}
-          />
-          <HomeDefault
-            label="Page 4"
-            frame={true}
-            right={<DesktopDefault frame={true} />}
-          />
+          <InteractiveHomeRow label="Page 1" />
+          <InteractiveHomeRow label="Page 2" />
+          <InteractiveHomeRow label="Page 3" />
+          <InteractiveHomeRow label="Page 4" />
         </div>
         <div
           style={{
@@ -126,7 +109,7 @@ export const Frame = () => {
             gap: "10px",
           }}
         >
-          <ButtonVariant3 />
+          <ButtonDefault />
         </div>
       </div>
     </div>

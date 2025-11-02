@@ -17,17 +17,18 @@ import {
 import { Frame } from "./components/Frame";
 import { HomeDefault } from "./components/Home";
 
+const variants = [
+  DesktopVariant2,
+  DesktopVariant4,
+  DesktopVariant5,
+  DesktopVariant6,
+  DesktopVariant7,
+  DesktopVariant8,
+  DesktopVariant9,
+  DesktopVariant10,
+];
+
 function App() {
-  const variants = [
-    DesktopVariant2,
-    DesktopVariant4,
-    DesktopVariant5,
-    DesktopVariant6,
-    DesktopVariant7,
-    DesktopVariant8,
-    DesktopVariant9,
-    DesktopVariant10,
-  ];
   return (
     <>
       <div className="bg-gray-200/50 w-full h-screen flex gap-10 justify-center items-center flex-row">
@@ -50,7 +51,9 @@ function App() {
         <div className="flex flex-col gap-4 justify-center items-center">
           {/* Home */}
           {variants.map((Variant, idx) => (
-            <HomeDefault key={idx} right={<Variant home={true} />} />
+            <>
+              <HomeDefault key={idx} right={<Variant home={true} />} />
+            </>
           ))}
         </div>
         {/* Frame */}

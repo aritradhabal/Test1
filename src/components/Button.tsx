@@ -1,8 +1,8 @@
 export const ButtonDefault = () => {
   return (
     <button
+      className="bg-[#ffce22] hover:bg-[#ffd84d]"
       style={{
-        backgroundColor: "#ffce22",
         display: "inline-flex",
         alignItems: "center",
         justifyContent: "center",
@@ -16,6 +16,7 @@ export const ButtonDefault = () => {
         gap: "10px",
         rotate: "0 deg",
         opacity: 1,
+        cursor: "pointer",
       }}
     >
       <p

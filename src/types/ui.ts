@@ -1,0 +1,10 @@
+export type VariantKey =
+  | "default"
+  | "v2"
+  | "v4"
+  | "v5"
+  | "v6"
+  | "v7"
+  | "v8"
+  | "v9"
+  | "v10";

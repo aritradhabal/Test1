@@ -27,6 +27,7 @@ export const HomeDefault = ({
         paddingBottom: "8px",
         paddingLeft: "22px",
         backgroundColor,
+        cursor: "pointer",
       }}
     >
       <span
@@ -41,6 +42,7 @@ export const HomeDefault = ({
           lineHeight: "130%",
           letterSpacing: "0px",
           verticalAlign: "middle",
+          whiteSpace: "nowrap",
         }}
       >
         {label}
