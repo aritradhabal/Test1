@@ -1,4 +1,8 @@
-import { Button } from "./components/Button";
+import {
+  ButtonDefault,
+  ButtonVariant2,
+  ButtonVariant3,
+} from "./components/Button";
 import {
   DesktopDefault,
   DesktopVariant2,
@@ -7,13 +11,16 @@ import {
   DesktopVariant5,
   DesktopVariant6,
   DesktopVariant7,
+  DesktopVariant8,
+  DesktopVariant10,
 } from "./components/Desktop";
 
 function App() {
   return (
     <div className="bg-white w-full h-screen flex gap-4 justify-center items-center flex-col">
-      Components:
-      <Button />
+      <ButtonDefault />
+      <ButtonVariant2 />
+      <ButtonVariant3 />
       <DesktopDefault />
       <DesktopVariant2 />
       <DesktopVariant9 />
@@ -21,6 +28,8 @@ function App() {
       <DesktopVariant5 />
       <DesktopVariant6 />
       <DesktopVariant7 />
+      <DesktopVariant8 />
+      <DesktopVariant10 />
     </div>
   );
 }
