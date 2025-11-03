@@ -4,13 +4,16 @@ export type HomeDefaultProps = {
   frame?: boolean;
   right?: ReactNode;
   label?: string;
+  childs?: boolean;
 };
 export const HomeDefault = ({
   frame = false,
   right,
   label = "All pages",
+  childs = false,
 }: HomeDefaultProps) => {
   const backgroundColor = frame ? "transparent" : "#FFFFFF";
+  const width = childs ? "45px" : "64px";
   return (
     <div
       style={{
@@ -32,7 +35,7 @@ export const HomeDefault = ({
     >
       <span
         style={{
-          width: "64px",
+          width: width,
           height: "18px",
           opacity: 1,
           fontFamily: "Montserrat",

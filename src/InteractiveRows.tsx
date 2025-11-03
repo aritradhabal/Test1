@@ -36,7 +36,13 @@ const renderComponent = (k: VariantKey) => {
   }
 };
 
-export const InteractiveHomeRow = ({ label }: { label?: string }) => {
+export const InteractiveHomeRow = ({
+  label,
+  childs = false,
+}: {
+  label?: string;
+  childs?: boolean;
+}) => {
   const [variant, setVariant] = useState<VariantKey>("default");
 
   const handleMouseEnter = () => {
@@ -83,6 +89,7 @@ export const InteractiveHomeRow = ({ label }: { label?: string }) => {
       <HomeDefault
         frame={true}
         label={label}
+        childs={childs}
         right={renderComponent(variant)}
       />
     </div>

@@ -30,7 +30,7 @@ export const Frame = () => {
             "0px 8px 15px 0px rgba(20, 20, 20, 0.12), 0px 0px 4px 0px rgba(20, 20, 20, 0.1)",
         }}
       >
-        <InteractiveHomeRow label="All Pages" />
+        <InteractiveHomeRow label="All pages" />
         <div
           style={{
             width: "370px",
@@ -62,10 +62,10 @@ export const Frame = () => {
           </svg>
         </div>
         <div style={{ width: "370px", height: "164px", opacity: 1 }}>
-          <InteractiveHomeRow label="Page 1" />
-          <InteractiveHomeRow label="Page 2" />
-          <InteractiveHomeRow label="Page 3" />
-          <InteractiveHomeRow label="Page 4" />
+          <InteractiveHomeRow label="Page 1" childs={true} />
+          <InteractiveHomeRow label="Page 2" childs={true} />
+          <InteractiveHomeRow label="Page 3" childs={true} />
+          <InteractiveHomeRow label="Page 4" childs={true} />
         </div>
         <div
           style={{
