@@ -16,23 +16,23 @@ import { HomeDefault } from "./components/Home";
 const renderComponent = (k: VariantKey) => {
   switch (k) {
     case "v2":
-      return <DesktopVariant2 frame={true} />;
+      return <DesktopVariant2 frame={true} home={true} />;
     case "v4":
-      return <DesktopVariant4 />;
+      return <DesktopVariant4 home={true} />;
     case "v5":
-      return <DesktopVariant5 />;
+      return <DesktopVariant5 home={true} />;
     case "v6":
-      return <DesktopVariant6 />;
+      return <DesktopVariant6 home={true} />;
     case "v7":
-      return <DesktopVariant7 />;
+      return <DesktopVariant7 home={true} />;
     case "v8":
-      return <DesktopVariant8 frame={true} />;
+      return <DesktopVariant8 frame={true} home={true} />;
     case "v9":
-      return <DesktopVariant9 frame={true} />;
+      return <DesktopVariant9 frame={true} home={true} />;
     case "v10":
-      return <DesktopVariant10 frame={true} />;
+      return <DesktopVariant10 frame={true} home={true} />;
     default:
-      return <DesktopDefault frame={true} />;
+      return <DesktopDefault frame={true} home={true} />;
   }
 };
 
